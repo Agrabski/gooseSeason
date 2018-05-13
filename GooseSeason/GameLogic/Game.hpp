@@ -3,7 +3,7 @@
 
 namespace GooseSeason
 {
-	namespace logic
+	namespace Logic
 	{
 		class Game
 		{
