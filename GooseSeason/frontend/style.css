@@ -1,0 +1,183 @@
+*
+{
+    font-family: 'Pangolin', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html
+{
+  height: 100%;
+  min-width: 480px;
+  color: #fff;
+}
+
+body
+{
+  display: grid;
+  grid-template-rows: 80px auto 50px;
+  grid-template-areas: 
+    "navbar"
+    "title"
+    "footer";
+
+    background-image: url("img/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: auto 150px 150px;
+
+    padding: 20px;
+}
+
+.button
+{
+    width: 5em;  
+    height: 1.7em;   
+    font-size: 1.5em;
+    border: none;
+    border-radius: 100px;
+    background: #4CAF50;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1px;
+
+    transition: background 0.5s, color 0.5s, border 0.5s;
+}
+
+.button:hover
+{
+    background: #EEFF41;
+    color: #000000;
+    cursor: pointer;
+}
+
+.modal
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    animation-name: modalopen;
+    animation-duration: 0.3s;
+}
+
+.modal-content
+{
+    color: #000;
+    background-color: #f4f4f4;
+    margin: 10% auto;
+    padding: 20px 40px;
+    width: 40%;
+    height: 50%;
+    min-width: 350px;
+    min-height: 400px; 
+    box-shadow: 0px 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 0.5s;
+
+}
+
+.closeBtn
+{
+    color: rgb(100, 100, 100);
+    float: right;
+    font-size: 30px;
+    margin-top: 0;
+
+    transition: color 0.5s;
+}
+
+.closeBtn:hover
+{
+    color: #cc0000;
+    cursor: pointer;
+}
+
+.modal-body
+{
+    display: grid;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2em;
+}
+
+input[type="text"],  input[type="password"]
+{
+    margin: 5px;
+    padding: 5px;
+
+    background: #E1F5FE;
+    font-size: 0.6em;
+    width: 70%;
+    border: 1px #0D47A1 solid;
+    border-radius: 100px;
+    
+}
+
+input[type="submit"]
+{
+    margin-top: 70px;
+    padding: 10px 5px;
+    width: 30%;
+    font-size: 0.6em;
+    border: none;
+    border-radius: 100px;
+    background: #F57C00;
+
+    transition: background 0.5s, color 0.5s;
+}
+
+input[type="submit"]:hover
+{
+    background: #DD2C00;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.signLink
+{
+    font-size: 0.4em;
+    color: #000000;
+}
+
+@keyframes modalopen
+{
+    from{opacity: 0}
+    to {opacity: 1}
+}
+
+#wrapper
+{
+    display: grid;
+    grid-template-rows: auto 50% auto;
+}
+
+#title
+{
+    padding-top: 5%;
+    padding-right: 5%;
+    text-align: right;
+
+
+    font-size: 7.75em;
+}
+
+footer
+{
+  grid-area: footer;
+  text-align: center;
+
+  color: #fff;
+  font-weight: 200;
+  padding-top: 16px;
+}

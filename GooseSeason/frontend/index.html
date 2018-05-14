@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Goose Season</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <div></div>
+        <button id="signinBtn" class="button">Sign in</button>
+        <button id="registerBtn" class="button">Register</button>
+    </nav>
+    
+    <div id="wrapper">
+        
+        <div>
+
+        </div>
+        <div id="title">GOOSE SEASON</div>
+    </div>
+    <footer>
+        2018 &copy KNITI
+    </footer>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="closeBtn">&times;</a>
+                <h1>Create an account</h1>
+            </div>
+            <div class="modal-body">
+                <form id="form">
+                    <input type="text" placeholder=" Username"><br>
+                    <input type="text" placeholder=" E-mail address"><br>
+                    <input type="password" placeholder=" Password"><br>
+                    <input type="password" placeholder=" Confirm password"><br>
+
+                    <input type="submit" value="Register!">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="closeBtn">&times;</a>
+                <h1>Log in to your account</h1>
+            </div>
+            <div class="modal-body">
+                <form id="form">
+                    <input type="text" placeholder=" Username"><br>
+                    <input type="password" placeholder=" Password"><br>
+
+                    <input type="submit" value="Login!"><br>
+
+                    <a href="#" class="signLink" id="noAccount">Don't have an account?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
