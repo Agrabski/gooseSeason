@@ -11,8 +11,9 @@ namespace GooseSeason
 		public:
 			Map();
 			~Map();
-
+			void update();
 		private:
+			std::vector<Projectile*>projectiles;
 			std::vector<Player>players;
 		};
 	}

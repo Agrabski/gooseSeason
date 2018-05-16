@@ -164,6 +164,14 @@
     </ClCompile>
     <ClCompile Include="unittest1.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameLogic\GameLogic.vcxproj">
+      <Project>{ed6748e1-d2cc-41c5-aa3c-9b1e772b2f41}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Geometry\Geometry.vcxproj">
+      <Project>{c767a8b9-24cd-40e5-9ad8-4ced30cc8ed0}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
